@@ -1,36 +1,220 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>receita de bolo</title>
-</head>
-<body>
-    <header>
-        <h1> Receita de bolo de cenoura</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Receita de bolo de cenoura fofinho com cobertura de chocolate. Fácil, deliciosa e perfeita para qualquer ocasião."
+    />
+    <title>Receita de Bolo de Cenoura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-icon">🍰</span>
+          <span>Bolo de Cenoura</span>
+        </div>
+        <nav class="menu" aria-label="Navegação principal">
+          <a href="#ingredientes">Ingredientes</a>
+          <a href="#preparo">Preparo</a>
+          <a href="#dicas">Dicas</a>
+        </nav>
+      </div>
     </header>
+
     <main>
-    <section class="galeria"></section>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Receita clássica</p>
+            <h1>Bolo de Cenoura com Cobertura de Chocolate</h1>
+            <p class="subtitle">
+              Uma massa fofinha, aromática e irresistível, com aquele sabor da
+              infância e uma cobertura cremosa por cima.
+            </p>
 
-    <div class="container">
-        <section class="contedo">
-            <div class="card">
-                <h2>ingredientes da massa</h2>
-
-                <ul>
-                    <li>3 cenouras medias picadas</li>
-                    <li>3 ovos</li>
-                    <li>1 xicara de oleo</li>
-                    <li>2 xicaras de açucar</li>
-                    <li>2 xicaras de farinha de trigo</li>
-                    <li>1 colher (sopa) de fermento em po</li>
-                </ul>
+            <div class="hero-actions">
+              <a href="#ingredientes" class="btn btn-primary">Ver ingredientes</a>
+              <button id="toggleInfo" class="btn btn-secondary" type="button">
+                Dica da casa
+              </button>
             </div>
-    
-        </section>
-    </div>
 
+            <div id="secretTip" class="info-tip" hidden>
+              Dica: bata as cenouras com os ovos e o açúcar até formar um creme
+              bem leve antes de misturar os secos. Isso deixa o bolo mais macio.
+            </div>
+
+            <ul class="stats" aria-label="Informações da receita">
+              <li>
+                <strong>40 min</strong>
+                <span>Tempo total</span>
+              </li>
+              <li>
+                <strong>12 fatias</strong>
+                <span>Rendimento</span>
+              </li>
+              <li>
+                <strong>Fácil</strong>
+                <span>Dificuldade</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-card">
+            <img
+              src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?auto=format&fit=crop&w=900&q=80"
+              alt="Bolo de cenoura com cobertura de chocolate"
+            />
+            <div class="floating-badge">⭐ 5.0</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ingredientes" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Ingredientes</p>
+            <h2>Os ingredientes certos para uma massa super fofinha</h2>
+          </div>
+
+          <div class="ingredient-grid">
+            <article class="card ingredient-card">
+              <h3>Massa</h3>
+              <ul>
+                <li>3 cenouras médias, picadas</li>
+                <li>3 ovos</li>
+                <li>1 xícara de óleo</li>
+                <li>2 xícaras de açúcar</li>
+                <li>2 xícaras de farinha de trigo</li>
+                <li>1 colher (sopa) de fermento em pó</li>
+              </ul>
+            </article>
+
+            <article class="card ingredient-card">
+              <h3>Cobertura</h3>
+              <ul>
+                <li>1 xícara de chocolate em pó</li>
+                <li>1 xícara de açúcar</li>
+                <li>4 colheres (sopa) de manteiga</li>
+                <li>5 colheres (sopa) de leite</li>
+                <li>1 colher (sopa) de essência de baunilha</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="preparo" class="section alt-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Modo de preparo</p>
+            <h2>Passo a passo para ficar perfeito</h2>
+          </div>
+
+          <div class="steps">
+            <article class="step card">
+              <span class="step-number">1</span>
+              <h3>Prepare a massa</h3>
+              <p>
+                Bata no liquidificador as cenouras, os ovos e o óleo até ficar bem
+                cremoso.
+              </p>
+            </article>
+
+            <article class="step card">
+              <span class="step-number">2</span>
+              <h3>Em seguida, misture</h3>
+              <p>
+                Despeje a mistura em uma tigela e adicione o açúcar, a farinha e o
+                fermento. Mexa delicadamente até ficar homogêneo.
+              </p>
+            </article>
+
+            <article class="step card">
+              <span class="step-number">3</span>
+              <h3>Asse</h3>
+              <p>
+                Coloque em uma forma untada e enfarinhada e asse em forno preaquecido a
+                180°C por cerca de 40 minutos.
+              </p>
+            </article>
+
+            <article class="step card">
+              <span class="step-number">4</span>
+              <h3>Faça a cobertura</h3>
+              <p>
+                Em uma panela, misture o chocolate em pó, o açúcar, a manteiga e o leite.
+                Cozinhe até engrossar, sem parar de mexer.
+              </p>
+            </article>
+
+            <article class="step card">
+              <span class="step-number">5</span>
+              <h3>Finalize</h3>
+              <p>
+                Espalhe a cobertura ainda quente sobre o bolo frio e sirva em seguida.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="dicas" class="section">
+        <div class="container">
+          <div class="servings-panel card">
+            <div>
+              <p class="eyebrow">Ajuste de porções</p>
+              <h3>Quantas fatias você quer fazer?</h3>
+            </div>
+
+            <div class="servings-controls" aria-label="Controle de porções">
+              <button id="decreaseServings" type="button" aria-label="Diminuir porções">
+                −
+              </button>
+              <span id="servingsValue">12 fatias</span>
+              <button id="increaseServings" type="button" aria-label="Aumentar porções">
+                +
+              </button>
+            </div>
+          </div>
+
+          <div class="tips-grid">
+            <article class="tip card">
+              <h3>💡 Dica</h3>
+              <p>Se quiser um bolo mais úmido, adicione 2 colheres de leite na massa.</p>
+            </article>
+
+            <article class="tip card">
+              <h3>🧁 Ideia</h3>
+              <p>Decore com raspas de chocolate ou granulado para deixar mais bonito.</p>
+            </article>
+
+            <article class="tip card">
+              <h3>⏳ Tempo</h3>
+              <p>Esse bolo fica ainda melhor depois de descansar por 30 minutos na geladeira.</p>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>Receita de bolo de cenoura</p>
+        <p>© <span id="year"></span> Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
-2
